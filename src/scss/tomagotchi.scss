@@ -1,0 +1,19 @@
+.greenguy{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 20rem;
+    width: 30rem;
+    animation: wiggle 2.75s linear infinite;
+  }
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(8deg);}
+   25% {transform: rotate(-8deg);}
+   50% {transform: rotate(8deg);}
+   75% {transform: rotate(-8deg);}
+   100% {transform: rotate(8deg);}
+}

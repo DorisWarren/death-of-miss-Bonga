@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../scss/styles.scss';
+import '../scss/header.scss';
 
 function Header(){
-  return (
+
+  return(
     <div>
-      <h1 className='bg-grn header'>Help Queue!</h1>
-      <Link to="/">Home</Link> | <Link to="/newticket">Create Ticket</Link>
+      <h1 className='bonga'>MISS BONGA TOMAGOTCHI</h1>
+      <p className='bonga'>Do you want to play with me?</p>
     </div>
   );
 }

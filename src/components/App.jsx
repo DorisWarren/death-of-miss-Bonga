@@ -1,17 +1,16 @@
 import React from 'react';
-import TicketList from './TicketList';
-import Header from './Header';
 import { Switch, Route } from 'react-router-dom';
-import NewTicketForm from './NewTicketForm';
 import Error404 from './Error404';
+import TomagotchiStatus from './TomagotchiStatus';
+import Header from './Header';
+import '../scss/app.scss';
 
 function App(){
   return (
-    <div>
+    <div className='universal'>
       <Header/>
       <Switch>
-        <Route exact path='/' component={TicketList} />
-        <Route exact path='/newticket' component={NewTicketForm} />
+        <Route component={TomagotchiStatus}/>
         <Route component={Error404}/>
       </Switch>
       <h1 style={{height: '50px'}}></h1>
